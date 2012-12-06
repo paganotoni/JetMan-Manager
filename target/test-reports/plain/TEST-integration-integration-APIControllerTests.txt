@@ -1,0 +1,21 @@
+Testsuite: APIControllerTests
+Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 108.292 sec
+------------- Standard Output ---------------
+--Output from testCorrectAddInstance--
+| Starting instance: java -Xmx512m -XX:PermSize=64M -XX:MaxPermSize=128M -jar /Users/antoniopagano/Desktop/deployer/lib/jetty-runner.jar --port 1212 /Users/antoniopagano/Desktop/deployer/apps/c5050201-d134-4cd8-addf-ef48cb139ae2.war 
+--Output from testIncompleteAddInstance--
+--Output from testListInstance--
+| Starting instance: java -Xmx512m -XX:PermSize=64M -XX:MaxPermSize=128M -jar /Users/antoniopagano/Desktop/deployer/lib/jetty-runner.jar --port 1212 /Users/antoniopagano/Desktop/deployer/apps/5469f0b7-1c58-4f62-8b2e-b868b27a794b.war 
+--Output from testDeleteInstance--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testCorrectAddInstance--
+--Output from testIncompleteAddInstance--
+--Output from testListInstance--
+--Output from testDeleteInstance--
+------------- ---------------- ---------------
+
+Testcase: testCorrectAddInstance took 54.649 sec
+Testcase: testIncompleteAddInstance took 0.008 sec
+Testcase: testListInstance took 53.546 sec
+Testcase: testDeleteInstance took 0.075 sec
