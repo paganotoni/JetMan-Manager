@@ -1,6 +1,7 @@
 package manager
 
-class PortVerifierService {
+
+class PortHelper {
 
   public Boolean isPortAvailable( String portNumber ) {
     boolean portTaken = false;
@@ -16,5 +17,18 @@ class PortVerifierService {
     }
 
     return !portTaken && Instance.countByPort( portNumber ) == 0
+  }
+
+  public Integer findAvailablePort(int startPort,int endPort) {
+    Integer result
+
+    for(int port : startPort..endPort ){
+      if( Instance.countByPort(port) == 0 && isPortAvailable(port.toString())){
+        result = port
+        break;
+      }
+    }
+
+    return result
   }
 }

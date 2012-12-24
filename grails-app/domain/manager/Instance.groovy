@@ -5,7 +5,7 @@ class Instance {
   final static String STATUS_DOWNLOADING  = "DOWNLOADING"
   final static String STATUS_UP           = "UP"
   final static String STATUS_STARTING     = "STARTING"
-  final static String STATUS_DOWN      = "DOWN"
+  final static String STATUS_DOWN         = "DOWN"
   final static String STATUS_STOPPED      = "STOPPED"
 
   String javaOptions

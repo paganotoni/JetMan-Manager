@@ -9,5 +9,10 @@ class BootStrap {
     instanceManagerService.initializeSavedInstances()
   }
 
-  def destroy = { }
+  def destroy = {
+    println "| Manager going down "
+    instanceManagerService.instances.each {
+      it.process.destroy()
+    }
+  }
 }
