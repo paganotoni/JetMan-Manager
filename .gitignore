@@ -18,3 +18,7 @@ stacktrace.log
 .idea/*
 *.db
 
+.classpath
+.project
+*.iml
+
